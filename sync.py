@@ -7,6 +7,8 @@ from subprocess import check_output
 
 
 dir = '/media/l31rb4g/38586AAE586A6A98/MP3/Nerdcast'
+
+
 link = 'http://jovemnerd.com.br/json-busca-nerdcast/'
 print('>>> Buscando lista completa de Nerdcasts...')
 nerdcast_list = json.loads(requests.post(link, data={'operation': 'getAll'}).text)
